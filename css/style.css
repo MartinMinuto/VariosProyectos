@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    height: 138vh;
+    width: 95vw;
+    background: linear-gradient(180deg, rgb(143, 5, 39), rgb(64, 6, 119));
+}
+
+h1{
+  position: relative;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  font-size: 3em;
+}
+
+.container{
+    position: relative;
+    display: block;
+    gap: 15px;
+    height: 100vh;
+    width: 95vw;
+}
+
+.container-link{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.Proyecto{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    text-align: center;
+    padding: 10px;
+    background: rgb(134, 114, 190);
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    width: 60%;
+}
+
+.Proyecto:hover{
+    cursor: pointer;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    background: rgb(66, 2, 126);
+    transition: 0.5s;
+}
+
+.description{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+
+@media (max-width:425px){
+    .Proyecto{
+        width: 75%;
+    }
+    .description{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:320px){
+    .Proyecto {
+        width: 95%;
+    }
+    .description{
+        font-size: 1em;
+        padding: 0px;
+    }
+}
+
+@media (max-width:900px){
+    body{
+        height: 144vh;
+    }
+}
+
+@media (max-width:767px){
+  .description{
+    padding: 5px;
+  }
+}
+
+@media (max-width:523px){
+    body{
+        height: 150vh;
+    }
+}
+
+@media (max-width:350px){
+    body{
+        height: 159vh;
+    }
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin-top: 150px;
+}
+
+.name{
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 1.8em;
+}
+
+.link{
+    width: 60px;
+    height: 60px;
+}

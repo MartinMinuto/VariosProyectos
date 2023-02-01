@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #f1f1f1;
+}
+
+ul {
+    position: relative;
+}
+
+ul li {
+   list-style: none;
+   text-align: center;
+}
+
+ul li a {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    font-size: 2em;
+    padding: 5px 20px;
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+ul li:hover a {
+    background:rgb(58, 54, 54);
+    color: var(--clr);
+    font-weight: 500;
+}
+
+ul:hover > li:not(:hover) {
+    opacity: 0;
+}
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    opacity: 0;
+    color: #222;
+    z-index: -1;
+    font-weight: 400;
+    text-transform: initial;
+    letter-spacing: 500;
+    transition: letter-spacing 0.5s;
+}
+
+ul li a:hover::before {
+   content: attr(data-text);
+   opacity: 1;
+   left: 50%;
+   background: var(--clr);
+   width: 250vh;
+   height: 250vh;
+   letter-spacing: 0;
+}
+
+.volver-a{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, .4);
+    text-decoration: none;
+}
+
+.volver-a:hover{
+    background: #fff;
+    color: black;
+    transition: 0.7s;
+     box-shadow: 10px 10px 20px rgb(0, 0, 0, .6);
+}

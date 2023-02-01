@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+nav{
+    position: relative;
+    width: 524px;
+    height: 50px;
+    background: rgb(34, 26, 46);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px; 
+    z-index: 1;
+}
+
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(170deg, rgb(38, 24, 238),rgb(56, 57, 146));
+    border-radius: 16px;
+    transition: .8s ease;
+}
+
+nav a:nth-child(1):hover~span{
+   left: 0;
+}
+
+nav a:nth-child(2):hover~span{
+   left: 95px;
+}
+
+nav a:nth-child(3):hover~span{
+   left: 189px;
+   width: 110px;
+}
+
+nav a:nth-child(4):hover~span{
+   left: 295px;
+   width: 115px;
+}
+
+nav a:nth-child(5):hover~span{
+   left: 405px;
+   width: 124px;
+}
+
+
+
+.volver-a{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, .4);
+    text-decoration: none;
+}
+
+.volver-a:hover{
+    background: #fff;
+    color: black;
+    transition: 0.7s;
+     box-shadow: 10px 10px 20px rgb(0, 0, 0, .6);
+}
